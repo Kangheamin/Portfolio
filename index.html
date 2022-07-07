@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software engineer Haemin">
+    <meta name="author" content="HaeMin">
+    <script src="https://kit.fontawesome.com/50737fff9c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/form-submission-handler.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/isotope.pkgd.min.js" defer></script>
+</head>
+<body>
+    <!--Navbar-->
+   <nav id="navber">
+    <div class="navar_logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Hyemin</a>
+    </div>
+        <ul class="navber_menu">
+            <li class="navbar_menu_item active" data-link="#home">Home</li>
+            <li class="navbar_menu_item" data-link="#about">About</li>
+            <li class="navbar_menu_item" data-link="#skills">Skills</li>
+            <li class="navbar_menu_item" data-link="#work">Work</li>
+            <li class="navbar_menu_item" data-link="#testimonials">Testimonials</li>
+            <li class="navbar_menu_item" data-link="#cotact">Contact</li>
+        </ul>
+        <!-- Toggle button -->
+        <button class="navbar_toggle-btn"> <i class="fas fa-hamburger"></i> </button>
+   </nav>
+   <!--Home-->
+   <section id="home">  
+       <div class="home_container">
+        <!-- <div class="home_avatar"></div> -->
+        <div class="txt_part">
+            <h1 class="home_title">Hello, <br>I'm WEB PUBLISHER</h1>
+            <h2 class="home_description">한발 한발 더 나아가기 위해 끊임없이 노력하고 <br>탐구하는 프론트엔드개발자가 되겠습니다.</h2>
+            <button class="home_contact">Contact Me</button>
+        </div>
+       </div>
+        </section>
+    <!--About-->
+   <section id="about" class="section section_container">   
+    <div class="about_title">
+        <h1>About me</h1>
+        <p class="sub">웹디자이너로 3년 정도 일했고, 프론트엔드에도 관심이 많고 좋아하는 일을 즐기면서 하고 싶은 강혜민입니다.<br>
+           머물러 있지 않고 자기계발을 통해 한발 한발 더 나아가고 끊임없이 노력하고 탐구하는 웹퍼블리셔가 되겠습니다
+        </p>
+        
+        <div class="about_profile">
+            <div class="left">
+                <img src="./image/profile.png" alt="">
+            </div>
+
+            <div class="right">
+                <h2>" 계속해서 성장해가는 개발자 "</h2>
+                <p>사용자가 <span class="blue_color">편리한</span> 디자인 <span class="blue_color">손쉬운 접근성</span>을 모토로 <br> 생각하는 개발자
+                    열정적인 코더입니다.</p>
+                    <div class="txt_part">
+                        <div class="cont">
+                            <p class="title blue_color">NAME</p>
+                            <span>강혜민</span>
+                        </div>
+                        <div class="cont">
+                            <p class="title blue_color">AGE</p>
+                            <span>(01.11)</span>
+                        </div>
+                        <div class="cont">
+                            <p class="title blue_color">ADRESS</p>
+                            <span>서울시 송파구</span>
+                        </div>
+                        <div class="cont">
+                            <p class="title blue_color">LICENSE</p>
+                            <span>SOKI 공모전디자인 입상</span>
+                            <span>GTQ 1급</span>
+                            <span>2종 보통 운전면허</span>
+                        </div>
+                        <div class="cont timeline">
+                            <p class="title blue_color">Time line</p>
+                            <span>2014.02 ~ 2017.02 인덕 대학교 졸업</span>
+                            <span>(주)현동인터내셔널 디자인 1년차 사원</span>
+                            <span>(주)위드퍼니처 디자인 2년차 주임</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    <div class="about_jobs">
+   
+    </div>
+   </section>
+    <!--Skills-->
+   <section id="skills" class="section">
+    <div class="section_container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <!-- <p>
+            Experience with all phases of the software life-cycle. Passion for
+          learning new technologies. Capable of working within a team environment
+          and independently. Ability to plan and time schedule, work under strict
+          time pressure and adapt quickly when needed.
+        </p> -->
+        
+        <div id="circle_bar">
+            <div class="frame">
+                <div class="box bx1">
+                    <div class="cont">
+                        <div class="top">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"/>
+                                <circle cx="70" cy="70" r="70"/>
+                            </svg>
+                            <div class="num">
+                                <h2>
+                                    <span class="count" date-limit="95">0</span>
+                                    <span>%</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3 class="count_text">HTML5</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box bx2">
+                    <div class="cont">
+                        <div class="top">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"/>
+                                <circle cx="70" cy="70" r="70"/>
+                            </svg>
+                            <div class="num">
+                                <h2>
+                                    <span class="count" date-limit="90">0</span>
+                                    <span>%</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3 class="count_text">CSS3</h3>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box bx3">
+                    <div class="cont">
+                        <div class="top">
+                            <svg>
+                                <circle cx="70" cy="70" r="70"/>
+                                <circle cx="70" cy="70" r="70"/>
+                            </svg>
+                            <div class="num">
+                                <h2>
+                                    <span class="count" date-limit="80">0</span>
+                                    <span>%</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3 class="count_text">Javascript</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+  </div>
+</div>
+   </section>
+   
+  
+     <!-- #2-1. 신세대 버전 버튼 📋-->
+   <main id="work" class="section">
+    <div class="section_container">
+        <h1>My Work</h1>
+        <h3>Projects</h3>
+        <ul class="sort_btn">
+            <li class="active"><a data-sort="*" href="">ALL</a></li>
+            <li><a data-sort=".web" href="">WEB</a></li>
+            <li><a data-sort=".ajax" href="">AJAX</a></li>
+            <li><a data-sort=".vue" href="">VUE</a></li>
+            <li><a data-sort=".php" href="">PHP</a></li>
+            <li><a data-sort=".develop" href="">DEVELOP</a></li>
+        </ul>
+    </div>
+
+       <!--✨ #2-2. 신세대 버전 프로젝트 ✨ -->
+    <section id="grid_system">
+         <!-- <article>
+            <div class="photo">
+                <div class="img" style="background-image:url(./image/wedding.png)"></div>
+                <h3>Portfolio-1</h3>
+                <p>이 곳은 Portfolio-1의 설명 공간입니다.</p>
+                <a href=""><i class="fas fa-arrow-right">&nbsp;</i>Detail_view</a>
+            </div>
+        </article>  -->
+    </section>
+    </main>
+   
+
+ 
+   
+   <!-- #1. 작은 버전 버튼 📋💩 -->
+   <!--work-->
+  <!-- <section id="work" class="section">
+      <div class="section_container">
+   <h1>My Work</h1>
+   <h3>Projects</h3>
+   <div class="work_categories">
+       <button class="category_btn selected" data-filter="*">All<span class="categroy_count">8</span></button>
+       <button class="category_btn" data-filter="front-end">front-end<span class="categroy_count">2</span></button>
+       <button class="category_btn" data-filter="Mobile">Mobile<span class="categroy_count">3</span></button>
+       <button class="category_btn" data-filter="design">design<span class="categroy_count">3</span></button>
+   </div> -->
+
+  <!-- #1. 작은 컨텐츠 ✨💩 -->
+
+    <!-- <div class="work_projects">
+        <a href="" class="project" target="blank" data-type="front-end">
+            <img src= "./image/project1.png" alt="event">
+            <div class="project_description">
+                <h3>Event</h3>
+                <span>Clon HTML or CSS</span>
+            </div>
+            </a>
+        <a href="" class="project" target="blank" data-type="front-end">
+            <img src= "./image/project2.png" alt="event">
+            <div class="project_description">
+                <h3>Event</h3>
+                <span>Clon HTML or CSS</span>
+            </div>
+            </a>
+        <a href="" class="project" target="blank" data-type="Mobile">
+            <img src= "./image/project3.png" alt="event">
+            <div class="project_description">
+                <h3>Event</h3>
+                <span>Clon HTML or CSS</span>
+            </div>
+            </a>
+        <a href="" class="project" target="blank" data-type="Mobile">
+        <img src= "./image/project4.png" alt="event">
+        <div class="project_description">
+            <h3>Event</h3>
+            <span>Clon HTML or CSS</span>
+        </div>
+        </a>
+        <a href="" class="project" target="blank" data-type="design">
+            <img src= "./image/project5.png" alt="event">
+            <div class="project_description">
+                <h3>Event</h3>
+                <span>Clon HTML or CSS</span>
+            </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="Mobile">
+                <img src= "./image/project6.png" alt="event">
+                <div class="project_description">
+                    <h3>Event</h3>
+                    <span>Clon HTML or CSS</span>
+                </div>
+                </a>
+                <a href="" class="project" target="blank" data-type="design">
+                    <img src= "./image/project7.png" alt="event">
+                    <div class="project_description">
+                        <h3>Event</h3>
+                        <span>Clon HTML or CSS</span>
+                    </div>
+                    </a>
+                    <a href="" class="project" target="blank" data-type="design">
+                        <img src= "./image/project8.png" alt="event">
+                        <div class="project_description">
+                            <h3>Event</h3>
+                            <span>Clon HTML or CSS</span>
+                        </div>
+                        </a>         
+    </div> -->
+</div>
+</section>
+    <!--chat-->
+   <section id="testimonials" class="section">
+    <div class="section_container">
+       <h1>Testimonials</h1>
+       <h3>See what they say about me</h3>
+       <div class="testimonials">
+          <div class="testimonial">
+            <div class="testimonial_profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+           <div class="testimonial_speech-bubble">
+            <p>디자인적 감각이 매우 높으며, 트렌드를 잘 따라갑니다.</p>
+            <p class="name"><a href="">김연재</a>현동인터내셔널/과장</p>
+           </div>
+        </div>
+        <div class="testimonial">
+           <div class="testimonial_speech-bubble">
+            <p>항상 능동적인 자세로 타의 모범이 되는 디자이너로써 강혜민씨를 추천합니다.
+                강혜민씨는 업무를 임하는 자세가 누구보다 적극적이고 창의적인 직원으로 아이디어 뱅크 역할을 했던 인재입니다. 
+                
+                
+                1. 기본적인 업무 태도가 좋습니다. 
+                
+                   - 회사 생활 동안 지각을 한 번도 한 적 없는 성실한 직원입니다. 
+                
+                
+                2. 회사의 스타일을 본인의 디자인에 잘 녹여 낼 수 있는 능력을 가진 직원입니다. 
+                
+                   - 디자인 업무를 시작하기 전 항상 레퍼런스 서치를 우선적을 하여 트렌드를 공부하고 그것을 디자인에 잘 적용합니다.
+                
+                   - 다른 사람이 주는 피드백을 적절하게 수용하여, 본인의 스타일에 맞게 잘 소화해냅니다. 
+                
+                 
+                3. 끊임 없이 공부합니다. 
+                  - 항상 겸손한 자세를 가지고 본인 직무에 대해 지속적으로 공부를 하는 모습을 종종 보았습니다. 
+                 
+                강혜민씨가 귀사에 입사를 한다면, 회사의 발전을 위해 많은 보탬이 될 인재로 추천합니다.</p>
+            <p class="name"><a href="">권지혜</a>/withfurniture 계장</p>
+           </div>
+           <div class="testimonial_profile"><i class="fas fa-user-circle"></i>
+           </div>
+        </div>
+       </div>
+    </div>
+    </section>
+   <!--contact-->
+
+   <section id="contacts">
+       <div class="contact">
+        <h2>Contact Us</h2>
+        <form class="gform form-elements" name="contactUs" method="post" action="https://script.google.com/macros/s/AKfycby0vX3OKHzffGs3UvOQtwEUlJVh2_G1dNFP1WrI/exec">
+            <fieldset>
+                <!-- <legend>구글 메일 발송</legend> -->
+                <div class="formlist">
+                    <ul>
+                        <li>
+                            <label for="name">이름 또는 회사명<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="text" id="name" name="name" placeholder="이름 또는 회사명을 입력해주세요" required autocomplete="off">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="email">답변받을 이메일<sup>*</sup></label>
+                            <span class="inputbox">
+                                <input type="email" id="email" name="email" placeholder="sample@mail.com" required autocomplete="off">
+                            </span>
+                        </li>
+                        <li>
+                            <label for="message">문의 내용<sup>*</sup></label>
+                            <span class="inputbox">
+                                <textarea name="message" id="message" placeholder="문의 사항을 입력해 주세요." required autocomplete="off"></textarea>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="btn_box">
+                        <button type="submit" class="command_btn">문의하기</button>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <div class="thankyou_message">
+                <article>
+                    <h1>작성된 내용이 모두 되었습니다.</h1>
+                    <p>메일확인 후 연락드리겠습니다.</p>
+                    <div class="btn_box">
+                        <a href="" class="close">닫기</a>
+                    </div>
+                </article>
+            </div>
+    
+        </form>
+        <!-- <span class="comment">작성하신 내용은 메일로 전송됩니다.</span> -->
+    </div>
+       </section>
+
+    <footer>
+    <div class="wrap">
+        <div class="cont">
+        <div class="left">
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="right">
+       <span>Contact me I bobpop20@naver.com</span>
+        </div>
+     </div>
+      <span> 해당 사이트는 상업적 목적이 아닌 개인용 포트폴리오를 위해 제작된 사이트로, 홈페이지 업무 내용 및 이미지에 대한 저작권이 따로 있음을 밝혀드립니다.</span>
+    </div>
+        
+    </footer>
+
+
+    <button class="topbutton">
+        <span>Top</span>
+    </button>
+
+
+<script src="./js/work.js"></script>
+
+</body>
+</html>
+
