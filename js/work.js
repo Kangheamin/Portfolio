@@ -1,5 +1,5 @@
 //✨💕 Work 신세대 부분 💕✨
-console.log("hi");
+
 const photoArr = [
     ["kuliner.png", "Kuliner website", "HTML, CSS, JQUERY를 이용하여 PC버전으로 제작되었습니다.","web", "https://kangheamin.github.io/kuliner/"],
     ["cakehouse.png", "cakehouse", "HTML, CSS, JQUERY를 이용하여 PC버전으로 제작되었습니다.","web", "https://kangheamin.github.io/CakeHouse/"],
@@ -63,3 +63,4 @@ for(v of sortBtns){
         e.currentTarget.classList.add("active");
     });    
 }
+

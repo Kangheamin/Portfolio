@@ -102,6 +102,15 @@ function scrollIntoView(selector){
 
 //제이쿼리 부분
 $(document).ready(function(){
+// 🤷‍♂️🤷‍♂️🐱‍🐉🐱‍🐉🐱‍🐉🐱‍🐉😘😘😘삭제하는 부분🤷‍♂️🤷‍♂️🐱‍🐉🐱‍🐉🐱‍🐉🐱‍🐉😘😘😘
+    
+
+
+
+
+
+
+
 
 
     //stroke-dashoffset: calc(440 - 440 * 95 / 100);
@@ -113,7 +122,7 @@ $(document).ready(function(){
         //console.log(index);
 
         let sel_count = $(this).find(".count").attr("date-limit");
-        console.log(sel_count);
+        //console.log(sel_count);
 
         $(this).find("circle:eq(1)").css("stroke-dashoffset", `calc(440 - 440 * ${sel_count} / 100 )`);
     

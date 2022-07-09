@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* Set */
 :root {
   /* color */
@@ -63,7 +64,7 @@ p {
 }
 
 .section {
-  padding: 50px;
+  padding: 70px;
   text-align: center;
   margin: auto;
 }
@@ -162,6 +163,8 @@ body {
 .home_container {
   display: flex;
   margin: 0 auto;
+
+ 
 }
 .home_avatar {
   margin: 0 40px;
@@ -175,7 +178,7 @@ body {
 }
 
 .txt_part {
-  width: calc(100% / 2);
+  width: 100%;
 }
 
 .home_title,
@@ -211,12 +214,15 @@ body {
   background: linear-gradient(180deg, rgba(244,240,237,1) 0%, rgb(224, 230, 234) 100%);
   box-shadow: 0 5px 5px -3px #a1c4fd;
   border-radius: 30px 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
-.about_profile .left img {height: 400px;}
-.about_profile .right {margin: 40px 20px; width: 100%;}
+.about_profile .left img {height: 370px;}
+.about_profile .right {width: 100%;}
 .about_profile .right .txt_part{display: flex; width: 100%;flex-wrap: wrap;}
 .about_profile .right .txt_part .cont{width:calc(100% / 3 - 40px); margin: 10px 0; text-align: left; margin: 0 20px;}
-.about_profile .right .txt_part .cont:last-child {width: calc(100% / 1.8); }
+.about_profile .right .txt_part .cont:last-child {width: calc(100% / 1.9)}
 .about_profile .right h2{font-size: 25px; color: var(--color-dark-grey);}
 .about_profile .right .txt_part .cont > span{display: block;}
 .about_profile .right p{padding: 20px 0;}
@@ -412,7 +418,8 @@ body {
   color:#555;
   font-weight: bold;
 }
-.contact fieldset .formlist{padding: 10px;}
+
+.contact fieldset{padding: 0;}
 .contact fieldset .formlist ul{padding-bottom: 10px;}
 .contact fieldset .formlist ul li{
   display: flex; 
@@ -530,7 +537,7 @@ body {
 
 /* footer */
 footer{
-  height: 80px;
+  padding: 20px 0;
   background-color:#a1c4fd;;
   color: var(--color-white);
 }
@@ -548,13 +555,16 @@ footer .wrap img {
  margin: 0 10px;
 }
 
-
 footer .cont{
-  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+footer .cont .left {
+  width: 120px;
+}
+
 .icons i {
   background-color: var(--color-sub);
   width: 30px;
@@ -602,26 +612,58 @@ footer .cont{
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  h1 {font-size: var(--font-medium);}
+
+  h2 {font-size: var(--font-regular);}
+
+  #circle_bar {padding:0;}
+  #home {
+    padding: 20px 10px;
+    padding-top: 130px;
+    background-color: #ccc;
+    font-size: var(--font-medium);
+  }
+
+  .home_title,
+  .home_description{
+    width: 100%;
+    font-size: var(--font-medium);
+  }
+
+  .home_description {
+    font-size: var(--font-regular);
+  }
+  .about_profile .left{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+  }
+
+  .about_profile .left img{
+   height: 200px;
+  }
+
+  .about_profile .right h2 {
+    font-size: var(--font-small);
+  }
+  .about_profile .right p{
+    font-size: var(--font-micro);
+  }
+
   a {
     text-decoration: none;
     color: var(--color-dark-grey);
   }
 
-  .about_profile .left{
-    width: 100%;
-  }
+
   .about_profile{
+    padding:0;
     flex-direction: column;
   }
 
-  .about_profile .left{
-    margin: 20px auto;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-  }
 
-  .txt_part{margin: 40px 0; font-size: 14px;}
+  .txt_part{margin: 40px 0; font-size: 12px;}
   
   .left{width: 100%;}
 
@@ -629,8 +671,17 @@ footer .cont{
   .home_container {
     width: 100%;
   }
+
+  .about_profile .right .txt_part .cont {
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+  }
+
+  .about_profile .right .txt_part .cont:last-child {width: calc(100% / 1.6 - 8px)}
+
+
   .section {
-    padding: 40px;
+    padding: 20px;
   }
 
   .navbar_toggle-btn {
@@ -708,7 +759,40 @@ footer .cont{
   #work article{
     width: 100%;
 }
+
+  #circle_bar .frame .box .cont .top svg{
+    width: 40px;
+    height: 0px;
+  }
+
+
+  /* footer */
+ 
+  footer .wrap > span {
+    display: none;
+  }
+
+  .contact fieldset .formlist ul li label {
+    width: 110px;
+    font-size: 13px;
+  }
+  .contact fieldset .formlist ul li .inputbox input{
+    color: var(--color-white);
+    font-size: 12px;
+  }
+
+  footer .wrap {
+    padding: 0 20px;
+  }
+  .icons i {
+    width: 23px;
+    height: 23px;
+  }
+  footer .right {
+    font-size: 12px;
+  }
 }
+/* 🤷‍♀️미디어 쿼리 끝 🤷‍♀️ */
 
 
 #circle_bar{
@@ -717,7 +801,7 @@ footer .cont{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  padding: 30px 0;
 }
 #circle_bar .frame {
   display: flex;
@@ -783,7 +867,6 @@ footer .cont{
 
 #circle_bar .frame .box .cont .top svg circle:last-child{
   stroke-linecap: butt; /*스트로크의 끝부분 처리 butt, round, project*/
-  
   stroke-dashoffset: 440; /*원의 0도부터 시계방향으로 이동한 거리*/
   stroke-dasharray: 440; /*원호를 구하기 2*PI*R = 2*70*3.14 = 439.6 ~ = 440 */
   stroke: var(--color-sub);
@@ -793,8 +876,7 @@ footer .cont{
 /* 신세대 work 부분 */
 #work {
   width: 100%;
-
-  padding: 80px 40px;
+  padding: 80px 300px;
 }
 #work .sort_btn{
   display: flex;
@@ -821,14 +903,13 @@ footer .cont{
   color: #fff;
 }
 
-#work {
-  padding: 0 300px;
-}
+
 
 #work article{
   width: 50%;
   float: left;
   padding: 10px 20px; 
+  padding-bottom: 40px;
 }
 
 #work article:hover {
@@ -860,9 +941,6 @@ footer .cont{
   background-position: 50% 100%;
 }
 
-#work article:first-child {
-  padding-top: 90px;
-}
 
 #work article .photo h3 {
   text-align-last: left;
@@ -895,14 +973,14 @@ footer .cont{
 
 @media (max-width:1400px){
   #work {
-    padding: 0 200px;
+    padding: 50px 200px;
   }
 
 }
 @media (max-width:991px){
 
   #work {
-    padding: 0 100px;
+    padding: 50px 100px;
   }
  
 
@@ -913,13 +991,14 @@ footer .cont{
 @media (max-width:767px){
   
   #work {
-    padding: 0 20px;
+    padding: 20px 20px;
   }
   
 
   #work{width: 100%; margin: 0;}
 
   #work .sort_btn{
+      flex-wrap: wrap;
       justify-content: center;
       padding-bottom: 10px;
   }
