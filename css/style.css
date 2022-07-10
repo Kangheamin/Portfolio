@@ -912,6 +912,10 @@ footer .cont .left {
   padding-bottom: 40px;
 }
 
+#work article:nth-child(2){
+  padding-top: 90px;
+}
+
 #work article:hover {
   transform: translateY(-3%);
   transition: transform 0.3s;
